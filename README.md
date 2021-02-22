@@ -75,7 +75,10 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
-    Gosta do meu trabalho? https://www.buymeacoffee.com/analu
+
+Gosta do meu trabalho? https://www.buymeacoffee.com/analu
+
+## Modelo inicial
 
 1. Crie um novo projeto clicando em "Usar este modelo"
 2. Clone o projeto criado
@@ -91,7 +94,7 @@ npm i
 npm run dev
 ```
 
-5. Visualize o projeto em https://localhost: 5000
+5. Visualize o projeto em https://localhost:5000
 
 ## Iniciando
 
@@ -138,9 +141,10 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
-    ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
+    ¿Te gusta mi trabajo?
+    ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
-## Empezar
+## Plantilla de inicio
 
 ### Estructura de carpetas
 
