@@ -9,6 +9,7 @@ This is a Svelte starter template, it uses:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
+-   [Font_Awesome](https://fontawesome.com/)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
@@ -64,6 +65,14 @@ Enable PWA by going to index.html and removing the comments from the lines:
     </script> -->
 ```
 
+### Font Awesome
+
+Font awesome is used by making use of the following pattern:
+
+```
+<i class="far fa-copyright" />
+```
+
 # (PT-BR) - Template Svelte com PWA
 
 Esse é um template para início de projeto com Svelte, ele usa:
@@ -75,8 +84,9 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
+-   [Font_Awesome](https://fontawesome.com/)
 
-Gosta do meu trabalho? https://www.buymeacoffee.com/analu
+Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
 ## Modelo inicial
 
@@ -130,6 +140,14 @@ Habilite o PWA acessando index.html e removendo os comentários das linhas:
     </script> -->
 ```
 
+### Font Awesome
+
+O Font Awesome é usado seguindo o seguinte padrão no seu html:
+
+```
+<i class="far fa-copyright" />
+```
+
 # (ES-ES) - Template Svelte con PWA
 
 Esta es una plantilla de inicio de Svelte, utiliza:
@@ -141,8 +159,9 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
-    ¿Te gusta mi trabajo?
-    ¿Me invitas a un café? https://www.buymeacoffee.com/analu
+-   [Font_Awesome](https://fontawesome.com/)
+
+    ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
 ## Plantilla de inicio
 
@@ -176,4 +195,12 @@ Habilite PWA yendo a index.html y eliminando los comentarios de las líneas:
         });
       }
     </script> -->
+```
+
+### Font Awesome
+
+La Font Awesome se usa haciendo uso del siguiente patrón:
+
+```
+<i class="far fa-copyright" />
 ```
