@@ -15,6 +15,9 @@ Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
 ## Get started
 
+!!! Warning !!!
+If you're hoping on using Amplify, you should keep @rollup/plugin-common-js in version 16.0.0 in package.json, version 17.0.0 breaks all amplify dependencies.
+
 ### Starter templates
 
 1. Create a new project clicking "Use this template"
@@ -108,6 +111,9 @@ npm run dev
 
 ## Iniciando
 
+!!! Aviso !!!
+Se você deseja usar o Amplify, deve manter @rollup/plugin-common-js na versão 16.0.0 no package.json, a versão 17.0.0 quebra todas as dependências do amplify.
+
 ### Estrutura da pasta
 
 -   Pasta de componentes:
@@ -164,6 +170,9 @@ Esta es una plantilla de inicio de Svelte, utiliza:
     ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
 ## Plantilla de inicio
+
+!!! Advertencia !!!
+Si espera usar Amplify, debe mantener @rollup/plugin-common-js en la versión 16.0.0 en package.json, la versión 17.0.0 rompe todas las dependencias de amplify.
 
 ### Estructura de carpetas
 
