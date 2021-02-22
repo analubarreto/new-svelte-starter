@@ -76,6 +76,34 @@ Font awesome is used by making use of the following pattern:
 <i class="far fa-copyright" />
 ```
 
+### Amplify
+
+Para usar o amplify, você tem que:
+
+1. Install AWS CLI
+2. Configure the AWS CLI
+3. Start amplify in the project with:
+
+```
+amplify init
+```
+
+4. Add the aws dependencies you want to use with (for example):
+
+```
+amplify add auth
+amplify add api
+```
+
+5. Uncomment the following lines in main.js:
+
+```
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
+```
+
 # (PT-BR) - Template Svelte com PWA
 
 Esse é um template para início de projeto com Svelte, ele usa:
@@ -154,6 +182,34 @@ O Font Awesome é usado seguindo o seguinte padrão no seu html:
 <i class="far fa-copyright" />
 ```
 
+### Amplify
+
+Para usar o amplify, você tem que:
+
+1. Instalar AWS CLI
+2. Configurar o AWS CLI
+3. Iniciar o amplify no projeto com:
+
+```
+amplify init
+```
+
+4. Adicionar as dependências do aws que você quer usar com (por exemplo):
+
+```
+amplify add auth
+amplify add api
+```
+
+5. Retirar o comentário no arquivo main.js:
+
+```
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
+```
+
 # (ES-ES) - Template Svelte con PWA
 
 Esta es una plantilla de inicio de Svelte, utiliza:
@@ -212,4 +268,32 @@ La Font Awesome se usa haciendo uso del siguiente patrón:
 
 ```
 <i class="far fa-copyright" />
+```
+
+### Amplify
+
+Para usar o amplify, você tem que:
+
+1. Instale AWS CLI
+2. Configure la AWS CLI
+3. Empiece a amplificar en el proyecto con:
+
+```
+amplify init
+```
+
+4. Agregue las dependencias de aws con las que desea usar (por ejemplo):
+
+```
+amplify add auth
+amplify add api
+```
+
+5. Descomente el archivo main.js:
+
+```
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
 ```
