@@ -31,7 +31,9 @@
     </noscript>
 
     <script src="/scripts/install.js"></script>
-    <script>
+    <script src="/utils/lazysizes.js" async></script>
+    <!-- Service Worker - Uncomment this like to enable PWA -->
+    <!-- <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js')
@@ -40,6 +42,6 @@
             });
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>

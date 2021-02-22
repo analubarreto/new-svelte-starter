@@ -1,105 +1,175 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Svelte PWA Template
 
----
+This is a Svelte starter template, it uses:
 
-# svelte app
+-   [Svelte](https://svelte.dev/)
+-   [Svelte_Routing](https://www.npmjs.com/package/svelte-routing)
+-   [PWA](https://web.dev/progressive-web-apps/?gclid=CjwKCAiAyc2BBhAaEiwA44-wW-Vw_ssdahpnvPwgx3wS-x5kh-pyvjAVXV2x8I9UQW0JNDSdarEdJRoCADMQAvD_BwE)
+-   [Jest](https://jestjs.io/en/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [PostCSS](https://postcss.org/)
+-   [Prettier](https://prettier.io/)
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
 ## Get started
 
-Install the dependencies...
+### Starter templates
 
-```bash
-cd svelte-app
-npm install
+1. Create a new project clicking "Use this template"
+2. Clone the created project
+3. Install dependencies
+
+```
+npm i
 ```
 
-...then start [Rollup](https://rollupjs.org):
+4. Run the project
 
-```bash
+```
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+5. Preview the project in https://localhost:5000
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+### Folder Structure
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+-   Components folder:
+    This is not a necessary folder, but it is advised you put your components here.
+-   Pages folder: This is where you should put your page components
+-   Stores folder: This can be used to put your stores but you don't need to put them there
 
-## Building and running in production mode
+### Lazy Image Loading
 
-To create an optimised version of the app:
+Lazy image loading has been added, the file lazySize.js inside util is responsible for it. It is rendered inside index.html. To use it in your images follow the example below:
 
-```bash
-npm run build
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+### PWA
 
+Enable PWA by going to index.html and removing the comments from the lines:
 
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
+```
+<!-- <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+        });
+      }
+    </script> -->
 ```
 
-## Using TypeScript
+# (PT-BR) - Template Svelte com PWA
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+Esse é um template para início de projeto com Svelte, ele usa:
 
-```bash
-node scripts/setupTypeScript.js
+-   [Svelte](https://svelte.dev/)
+-   [Svelte_Routing](https://www.npmjs.com/package/svelte-routing)
+-   [PWA](https://web.dev/progressive-web-apps/?gclid=CjwKCAiAyc2BBhAaEiwA44-wW-Vw_ssdahpnvPwgx3wS-x5kh-pyvjAVXV2x8I9UQW0JNDSdarEdJRoCADMQAvD_BwE)
+-   [Jest](https://jestjs.io/en/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [PostCSS](https://postcss.org/)
+-   [Prettier](https://prettier.io/)
+    Gosta do meu trabalho? https://www.buymeacoffee.com/analu
+
+1. Crie um novo projeto clicando em "Usar este modelo"
+2. Clone o projeto criado
+3. Instale dependências
+
+```
+npm i
 ```
 
-Or remove the script via:
+4. Rode o app
 
-```bash
-rm scripts/setupTypeScript.js
+```
+npm run dev
 ```
 
-## Deploying to the web
+5. Visualize o projeto em https://localhost: 5000
 
-### With [Vercel](https://vercel.com)
+## Iniciando
 
-Install `vercel` if you haven't already:
+### Estrutura da pasta
 
-```bash
-npm install -g vercel
+-   Pasta de componentes:
+    Esta não é uma pasta necessária, mas é aconselhável que você coloque seus componentes aqui.
+-   Pasta de páginas: é onde você deve colocar os componentes da página
+-   Pasta de lojas: pode ser usada para colocar suas lojas, mas você não precisa colocá-las lá
+
+### Carregamento lento da imagem
+
+O carregamento lento da imagem foi adicionado, o arquivo lazySize.js dentro do util é responsável por isso. Ele é renderizado dentro de index.html. Para utilizá-lo em suas imagens siga o exemplo abaixo:
+
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
 ```
 
-Then, from within your project folder:
+### PWA
 
-```bash
-cd public
-vercel deploy --name my-project
+Habilite o PWA acessando index.html e removendo os comentários das linhas:
+
+```
+<!-- <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+        });
+      }
+    </script> -->
 ```
 
-### With [surge](https://surge.sh/)
+# (ES-ES) - Template Svelte con PWA
 
-Install `surge` if you haven't already:
+Esta es una plantilla de inicio de Svelte, utiliza:
 
-```bash
-npm install -g surge
+-   [Svelte](https://svelte.dev/)
+-   [Svelte_Routing](https://www.npmjs.com/package/svelte-routing)
+-   [PWA](https://web.dev/progressive-web-apps/?gclid=CjwKCAiAyc2BBhAaEiwA44-wW-Vw_ssdahpnvPwgx3wS-x5kh-pyvjAVXV2x8I9UQW0JNDSdarEdJRoCADMQAvD_BwE)
+-   [Jest](https://jestjs.io/en/)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [PostCSS](https://postcss.org/)
+-   [Prettier](https://prettier.io/)
+    ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
+
+## Empezar
+
+### Estructura de carpetas
+
+-   Carpeta de componentes:
+    Esta no es una carpeta necesaria, pero se recomienda que coloque sus componentes aquí.
+-   Carpeta de páginas: aquí es donde debe colocar los componentes de su página
+-   Carpeta de tiendas: se puede utilizar para poner sus tiendas, pero no es necesario que las ponga allí.
+
+### Carga lenta de imágenes
+
+Se ha agregado la carga diferida de imágenes, el archivo lazySize.js dentro de util es responsable de ello. Se representa dentro de index.html. Para usarlo en tus imágenes sigue el siguiente ejemplo:
+
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
 ```
 
-Then, from within your project folder:
+### PWA
 
-```bash
-npm run build
-surge public my-project.surge.sh
+Habilite PWA yendo a index.html y eliminando los comentarios de las líneas:
+
+```
+<!-- <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+        });
+      }
+    </script> -->
 ```
