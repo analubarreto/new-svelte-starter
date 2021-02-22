@@ -18,6 +18,26 @@ Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 !!! Warning !!!
 If you're hoping on using Amplify, you should keep @rollup/plugin-common-js in version 16.0.0 in package.json, version 17.0.0 breaks all amplify dependencies.
 
+1. Add .babelrc to your root folder
+
+```
+{
+  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
+}
+```
+
+2. Add .prettierrc to your root folder
+
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100
+}
+```
+
 ### Starter templates
 
 1. Create a new project clicking "Use this template"
@@ -119,7 +139,32 @@ Esse é um template para início de projeto com Svelte, ele usa:
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
-## Modelo inicial
+## Inicie
+
+!!! Aviso !!!
+Se você deseja usar o Amplify, deve manter @ rollup / plugin-common-js na versão 16.0.0 no package.json, a versão 17.0.0 quebra todas as dependências do amplify.
+
+1. Adicione na sua pasta root .babelrc
+
+```
+{
+  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
+}
+```
+
+2. Adicione na sua pasta root .prettierrc
+
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100
+}
+```
+
+### Modelo inicial
 
 1. Crie um novo projeto clicando em "Usar este modelo"
 2. Clone o projeto criado
@@ -229,6 +274,26 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 
 !!! Advertencia !!!
 Si espera usar Amplify, debe mantener @rollup/plugin-common-js en la versión 16.0.0 en package.json, la versión 17.0.0 rompe todas las dependencias de amplify.
+
+1. Adicione .babelrc à sua pasta raiz
+
+```
+{
+  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
+}
+```
+
+2.Adicione .prettierrc à sua pasta raiz
+
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100
+}
+```
 
 ### Estructura de carpetas
 
