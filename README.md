@@ -9,7 +9,7 @@ This is a Svelte starter template, it uses:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
--   [Font_Awesome](https://fontawesome.com/)
+-   [Svelte Icons](https://svelte-icons.vercel.app/)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
@@ -135,7 +135,7 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
--   [Font_Awesome](https://fontawesome.com/)
+-   [Svelte Icons](https://svelte-icons.vercel.app/)
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
@@ -266,7 +266,7 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
--   [Font_Awesome](https://fontawesome.com/)
+-   [Svelte Icons](https://svelte-icons.vercel.app/)
 
     ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
