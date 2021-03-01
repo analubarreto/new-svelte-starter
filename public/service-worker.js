@@ -2,15 +2,15 @@
 
 // Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v1';
+let deferredPrompt;
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
+  '/global.css',
   '/offline.html',
 ];
-
+// Install service worker
 self.addEventListener('install', (evt) => {
-  console.log('[ServiceWorker] Install');
-
   evt.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
         console.log('[ServiceWorker] Pre-caching offline page');
@@ -20,7 +20,7 @@ self.addEventListener('install', (evt) => {
 
   self.skipWaiting();
 });
-
+// Activate service worker
 self.addEventListener('activate', (evt) => {
   console.log('[ServiceWorker] Activate');
   // Remove previous cached data from disk.
@@ -28,7 +28,6 @@ self.addEventListener('activate', (evt) => {
       caches.keys().then((keyList) => {
         return Promise.all(keyList.map((key) => {
           if (key !== CACHE_NAME) {
-            console.log('[ServiceWorker] Removing old cache', key);
             return caches.delete(key);
           }
         }));
@@ -37,21 +36,27 @@ self.addEventListener('activate', (evt) => {
 
   self.clients.claim();
 });
-
+// Fetch event
 self.addEventListener('fetch', (evt) => {
-  console.log('[ServiceWorker] Fetch', evt.request.url);
-  // Add fetch event handler here.
-  if (evt.request.mode !== 'navigate') {
-    // Not a page navigation, bail.
-    return;
-  }
+  // Show offline page if offline
   evt.respondWith(
-      fetch(evt.request)
-          .catch(() => {
-            return caches.open(CACHE_NAME)
-                .then((cache) => {
-                  return cache.match('offline.html');
-                });
-          })
-  );
-});
+    fetch(evt.request).catch(() => {
+      caches.match(evt.request).then(res => {
+        if (res) {
+          return res;
+        } else if (evt.request.headers.get('accept').includes('text/html')) {
+          return caches.match('/offline.html')
+        }
+      })
+    })
+  )
+  // Install button
+  window.addEventListener('beforeinstallprompt', e => {
+    // Stash event so it can be triggered later
+    deferredPrompt = e;
+    // Update UI notify the user they can install the PWA
+    showInstallPromotion();
+    // Optionally, send analytics event that PWA install promo was shown
+    console.log(`'beforeinstallprompt' even was fired`)
+  })
+})

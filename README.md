@@ -3,7 +3,7 @@
 This is a Svelte starter template, it uses:
 
 -   [Svelte](https://svelte.dev/)
--   [Svelte_Routing](https://www.npmjs.com/package/svelte-routing)
+-   [Svelte Routing](https://www.npmjs.com/package/svelte-routing)
 -   [PWA](https://web.dev/progressive-web-apps/?gclid=CjwKCAiAyc2BBhAaEiwA44-wW-Vw_ssdahpnvPwgx3wS-x5kh-pyvjAVXV2x8I9UQW0JNDSdarEdJRoCADMQAvD_BwE)
 -   [Jest](https://jestjs.io/en/)
 -   [TailwindCSS](https://tailwindcss.com/)

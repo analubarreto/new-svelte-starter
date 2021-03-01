@@ -61,3 +61,19 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+/* Offline page styles */
+.centered-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.centered-container .title {
+	text-align: center;
+	font-size: 40px;
+	color: orange;
+}
