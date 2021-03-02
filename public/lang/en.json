@@ -1,0 +1,8 @@
+{
+  "home": { "exampleText": "Just an example text to show i18n working" },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog"
+  }
+}
