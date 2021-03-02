@@ -1,5 +1,8 @@
 {
-  "home": { "exampleText": "Solo un texto de ejemplo para mostrar i18n funcionando" },
+  "home": { 
+    "exampleText": "Solo un texto de ejemplo para mostrar i18n funcionando",
+    "title": "Página Home"
+  },
   "navbar": {
     "home": "Home",
     "about": "Sobre",
