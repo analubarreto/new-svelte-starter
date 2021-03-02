@@ -10,6 +10,7 @@ This is a Svelte starter template, it uses:
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
+-   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
@@ -136,6 +137,7 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
+-   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
@@ -267,6 +269,7 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [PostCSS](https://postcss.org/)
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
+-   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 
     ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
