@@ -1,4 +1,6 @@
 <script>
+	// i18n
+	import { setupI18n } from './services/i18n';
 	// Svelte Routing
 	import { Router, Route } from 'svelte-routing';
 	// Pages
@@ -10,6 +12,8 @@
 	import Navbar from './components/Navbar.svelte';
 
 	export let url = '';
+
+	setupI18n({ withLocale: 'en' });
 </script>
 
 <Router {url}>

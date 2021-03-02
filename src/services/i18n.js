@@ -8,7 +8,7 @@ function setupI18n({ withLocale: _locale} = { withLocale: 'en' }) {
       'navbar': {
         'home': 'Home',
         'about': 'About',
-        'Blog': 'Blog'
+        'blog': 'Blog'
       }
     },
     pt: {
@@ -16,7 +16,7 @@ function setupI18n({ withLocale: _locale} = { withLocale: 'en' }) {
       'navbar': {
         'home': 'Início',
         'about': 'Sobre',
-        'Blog': 'Blog'
+        'blog': 'Blog'
       }
     },
     es: {
@@ -24,7 +24,7 @@ function setupI18n({ withLocale: _locale} = { withLocale: 'en' }) {
       'navbar': {
         'home': 'Home',
         'about': 'Sobre',
-        'Blog': 'Blog'
+        'blog': 'Blog'
       }
     }
   });
