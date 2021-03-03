@@ -121,6 +121,27 @@ Amplify.configure(awsconfig);
 ### Storybook
 
 Seems like the fix I used to make storybook work only works with yarn. I don't know if that's true as I didn't test it with npm.
+You'll need the .storybook folder in your directory, so add it to the main src folder with the following documents:
+
+main.js
+```
+module.exports = {
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ]
+}
+```
+preview.js
+```
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+}
+```
 
 To start storybook:
 
@@ -131,6 +152,7 @@ yarn storybook
 ```
 
 2. Go to http://localhost:6006/
+3.
 
 # (PT-BR) - Template Svelte com PWA
 
@@ -260,6 +282,28 @@ Amplify.configure(awsconfig);
 ### Storybook
 
 Parece que a correção que usei para fazer o Storybook funcionar só funciona com yarn. Não sei se isso é verdade porque não testei com o npm.
+Você precisará da pasta .storybook em seu diretório, portanto, adicione-a à pasta src principal com os seguintes documentos:
+
+main.js
+```
+module.exports = {
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ]
+}
+```
+preview.js
+```
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+}
+```
+Para executar o storybook:
 
 1. Rode:
 
@@ -392,7 +436,29 @@ Amplify.configure(awsconfig);
 ### Storybook
 
 Parece que la solución que usé para hacer que el Storybook funcione solo funciona con hilo. No sé si eso es cierto ya que no lo probé con npm.
+Necesitará la carpeta .storybook en su directorio, así que agréguela a la carpeta principal src con los siguientes documentos:
 
+main.js
+```
+module.exports = {
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ]
+}
+```
+preview.js
+```
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+}
+```
+
+Para ejecutar Storybook:
 1. Ejecuta
 
 ```
