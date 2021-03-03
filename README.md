@@ -11,6 +11,7 @@ This is a Svelte starter template, it uses:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
+-   [Storybook](https://storybook.js.org/)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
@@ -46,13 +47,13 @@ If you're hoping on using Amplify, you should keep @rollup/plugin-common-js in v
 3. Install dependencies
 
 ```
-npm i
+yarn
 ```
 
 4. Run the project
 
 ```
-npm run dev
+yarn dev
 ```
 
 5. Preview the project in https://localhost:5000
@@ -89,17 +90,9 @@ Enable PWA by going to index.html and removing the comments from the lines:
     </script> -->
 ```
 
-### Font Awesome
-
-Font awesome is used by making use of the following pattern:
-
-```
-<i class="far fa-copyright" />
-```
-
 ### Amplify
 
-Para usar o amplify, você tem que:
+To use amplify, you have to:
 
 1. Install AWS CLI
 2. Configure the AWS CLI
@@ -125,6 +118,20 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 ```
 
+### Storybook
+
+Seems like the fix I used to make storybook work only works with yarn. I don't know if that's true as I didn't test it with npm.
+
+To start storybook:
+
+1. Run
+
+```
+yarn storybook
+```
+
+2. Go to http://localhost:6006/
+
 # (PT-BR) - Template Svelte com PWA
 
 Esse é um template para início de projeto com Svelte, ele usa:
@@ -138,6 +145,7 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
+-   [Storybook](https://storybook.js.org/)
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
@@ -173,16 +181,16 @@ Se você deseja usar o Amplify, deve manter @ rollup / plugin-common-js na vers�
 3. Instale dependências
 
 ```
-npm i
+yarn
 ```
 
 4. Rode o app
 
 ```
-npm run dev
+yarn
 ```
 
-5. Visualize o projeto em https://localhost:5000
+5. Visualize o projeto em http://localhost:5000
 
 ## Iniciando
 
@@ -221,14 +229,6 @@ Habilite o PWA acessando index.html e removendo os comentários das linhas:
     </script> -->
 ```
 
-### Font Awesome
-
-O Font Awesome é usado seguindo o seguinte padrão no seu html:
-
-```
-<i class="far fa-copyright" />
-```
-
 ### Amplify
 
 Para usar o amplify, você tem que:
@@ -257,6 +257,18 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 ```
 
+### Storybook
+
+Parece que a correção que usei para fazer o Storybook funcionar só funciona com yarn. Não sei se isso é verdade porque não testei com o npm.
+
+1. Rode:
+
+```
+yarn storybook
+```
+
+2. Vá até: http://localhost:6006/
+
 # (ES-ES) - Template Svelte con PWA
 
 Esta es una plantilla de inicio de Svelte, utiliza:
@@ -270,6 +282,7 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
+-   [Storybook](https://storybook.js.org/)
 
     ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
@@ -286,7 +299,7 @@ Si espera usar Amplify, debe mantener @rollup/plugin-common-js en la versión 16
 }
 ```
 
-2.Adicione .prettierrc à sua pasta raiz
+2. Adicione .prettierrc à sua pasta raiz
 
 ```
 {
@@ -297,6 +310,24 @@ Si espera usar Amplify, debe mantener @rollup/plugin-common-js en la versión 16
   "printWidth": 100
 }
 ```
+
+### Empeze
+
+1. Cree un nuevo proyecto haciendo clic en "Usar esta plantilla"
+2. Clona el proyecto creado
+3. Instalar dependencias
+
+```
+yarn
+```
+
+4. Ejecuta el proyecto
+
+```
+yarn dev
+```
+
+5. Obtenga una vista previa del proyecto en http://localhost:5000
 
 ### Estructura de carpetas
 
@@ -330,14 +361,6 @@ Habilite PWA yendo a index.html y eliminando los comentarios de las líneas:
     </script> -->
 ```
 
-### Font Awesome
-
-La Font Awesome se usa haciendo uso del siguiente patrón:
-
-```
-<i class="far fa-copyright" />
-```
-
 ### Amplify
 
 Para usar o amplify, você tem que:
@@ -365,3 +388,15 @@ import awsconfig from './aws-exports';
 
 Amplify.configure(awsconfig);
 ```
+
+### Storybook
+
+Parece que la solución que usé para hacer que el Storybook funcione solo funciona con hilo. No sé si eso es cierto ya que no lo probé con npm.
+
+1. Ejecuta
+
+```
+yarn storybook
+```
+
+2. Va a: http://localhost:6006/
