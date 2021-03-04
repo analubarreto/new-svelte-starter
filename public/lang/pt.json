@@ -7,5 +7,14 @@
     "home": "Início",
     "about": "Sobre",
     "blog": "Blog"
+  },
+  "blog": {
+    "title": "Blog",
+    "post1": "Primeiro Post",
+    "post2": "Segundo Post",
+    "post3": "Terceiro Post"
+  },
+  "about": {
+    "title": "Sobre"
   }
 }

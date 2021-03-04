@@ -2,19 +2,20 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let value;
+	export let langs;
 
 	const dispatch = createEventDispatcher();
 
 	function switchLocale(e) {
 		e.preventDefault();
-		dispatch('locale-changed', e.target.value);
+		dispatch('localeChanged', e.target.value);
 	}
 </script>
 
 <div>
-	<select class="p-2 border-none" {value} on:blur={switchLocale}>
-		<option value="en">English</option>
-		<option value="pt">Português</option>
-		<option value="es">Español</option>
+	<select class="p-2 border-none select" {value} on:blur={switchLocale}>
+		{#each langs as lang}
+			<option value={lang.value}>{lang.name}</option>
+		{/each}
 	</select>
 </div>

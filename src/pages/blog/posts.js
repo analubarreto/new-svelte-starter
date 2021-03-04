@@ -1,18 +1,14 @@
-import { writable } from 'svelte/store';
-
-const posts = writable([
+export default [
   {
     id: 1,
-    title: 'First Post'
+    title: 'blog.post1'
   },
   {
     id: 2,
-    title:'Second Post'
+    title:'blog.post2'
   },
   {
     id: 3,
-    title: 'Third Post'
+    title: 'blog.post3'
   },
-]);
-
-export default posts;
+]

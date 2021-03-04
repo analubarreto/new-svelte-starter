@@ -3,13 +3,15 @@
 	import { setupI18n } from './services/i18n';
 	// Svelte Routing
 	import { Router, Route } from 'svelte-routing';
-	// Pages
+	// Router config
 	import Home from './pages/Home.svelte';
 	import About from './pages/About.svelte';
 	import Blog from './pages/blog/BlogIndex.svelte';
 	import BlogPost from './pages/blog/BlogPost.svelte';
+
+	import links from './components/Navbar/links';
 	// Components
-	import Navbar from './components/Navbar.svelte';
+	import Navbar from './components/Navbar/Navbar.svelte';
 
 	export let url = '';
 
@@ -17,7 +19,7 @@
 </script>
 
 <Router {url}>
-	<Navbar />
+	<Navbar {links} />
 	<div>
 		<Route path="blog/:id" component={BlogPost} />
 		<Route path="blog" component={Blog} />

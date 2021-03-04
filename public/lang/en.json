@@ -7,5 +7,14 @@
     "home": "Home",
     "about": "About",
     "blog": "Blog"
+  },
+  "blog": {
+    "title": "Blog",
+    "post1": "First Post",
+    "post2": "Second Post",
+    "post3": "Third Post"
+  },
+  "about": {
+    "title": "About"
   }
 }
