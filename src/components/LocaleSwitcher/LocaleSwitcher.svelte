@@ -12,7 +12,7 @@
 </script>
 
 <div>
-	<select {value} on:blur={switchLocale}>
+	<select class="p-2 border-none" {value} on:blur={switchLocale}>
 		<option value="en">English</option>
 		<option value="pt">Português</option>
 		<option value="es">Español</option>

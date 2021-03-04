@@ -2,7 +2,7 @@
 	import { locale } from 'svelte-i18n';
 	import { Link } from 'svelte-routing';
 	import { setupI18n, _ } from '../services/i18n.js';
-	import LocaleSwitcher from '../components/LocaleSwitcher.svelte';
+	import LocaleSwitcher from '../components/LocaleSwitcher/LocaleSwitcher.svelte';
 </script>
 
 <nav class="flex justify-evenly py-5">
