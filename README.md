@@ -129,6 +129,16 @@ yarn storybook
 yarn build-storybook
 ```
 
+## Cypress
+
+All config is made for you in this template, if you need a good source to learn cypress click [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+
+-   Run cypress:
+
+```
+yarn cypress
+```
+
 # (PT-BR) - Template Svelte com PWA
 
 Esse é um template para início de projeto com Svelte, ele usa:
@@ -283,6 +293,16 @@ yarn storybook
 yarn build-storybook
 ```
 
+## Cypress
+
+Toda a configuração está feita para você, mas se você precisar de um lugar para aprender a usar o Cypress clique [aqui](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+
+-   Rode cypress:
+
+```
+yarn cypress
+```
+
 # (ES-ES) - Template Svelte con PWA
 
 Esta es una plantilla de inicio de Svelte, utiliza:
@@ -430,4 +450,14 @@ yarn storybook
 
 ```
 yarn build-storybook
+```
+
+## Cypress
+
+Toda la configuración está hecha por usted, pero si necesita un lugar para aprender a usar Cypress, haga clic [aquí](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+
+-   Rode cypress:
+
+```
+yarn cypress
 ```
