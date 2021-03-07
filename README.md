@@ -20,43 +20,33 @@ Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 !!! Warning !!!
 If you're hoping on using Amplify, you should keep @rollup/plugin-common-js in version 16.0.0 in package.json, version 17.0.0 breaks all amplify dependencies.
 
-1. Add .babelrc to your root folder
-
-```
-{
-  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
-}
-```
-
-2. Add .prettierrc to your root folder
-
-```
-{
-  "singleQuote": true,
-  "trailingComma": "all",
-  "useTabs": true,
-  "tabWidth": 4,
-  "printWidth": 100
-}
-```
-
 ### Starter templates
 
-1. Create a new project clicking "Use this template"
-2. Clone the created project
-3. Install dependencies
+1. Open a terminal
+2. Type:
+
+```
+npx degit analubarreto/new-svelte-starter my-project
+```
+
+3. cd into folder
+4. Install dependencies with
 
 ```
 yarn
 ```
 
-4. Run the project
+-   Run project with:
 
 ```
 yarn dev
 ```
 
-5. Preview the project in https://localhost:5000
+-   Build project with:
+
+```
+yarn build
+```
 
 ### Folder Structure
 
@@ -123,29 +113,6 @@ Amplify.configure(awsconfig);
 Seems like the fix I used to make storybook work only works with yarn. I don't know if that's true as I didn't test it with npm.
 You'll need the .storybook folder in your directory, so add it to the main src folder with the following documents:
 
-main.js
-
-```
-module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
-}
-```
-
-preview.js
-
-```
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
-```
-
 To start storybook:
 
 1. Run
@@ -155,7 +122,12 @@ yarn storybook
 ```
 
 2. Go to http://localhost:6006/
-3.
+
+-   Build storybook with:
+
+```
+yarn build-storybook
+```
 
 # (PT-BR) - Template Svelte com PWA
 
@@ -179,24 +151,32 @@ Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/an
 !!! Aviso !!!
 Se você deseja usar o Amplify, deve manter @ rollup / plugin-common-js na versão 16.0.0 no package.json, a versão 17.0.0 quebra todas as dependências do amplify.
 
-1. Adicione na sua pasta root .babelrc
+1. Abra um terminal
+2. Digite:
 
 ```
-{
-  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
-}
+npx degit analubarreto/new-svelte-starter my-project
 ```
 
-2. Adicione na sua pasta root .prettierrc
+3. cd para a pasta
+4. Instale as dependências com:
 
 ```
-{
-  "singleQuote": true,
-  "trailingComma": "all",
-  "useTabs": true,
-  "tabWidth": 4,
-  "printWidth": 100
-}
+yarn
+```
+
+5. Rode o projeto com:
+
+```
+yarn dev
+```
+
+6. Vá a http://localhost:5000/
+
+-   Builde o projeto com:
+
+```
+yarn build
 ```
 
 ### Modelo inicial
@@ -287,29 +267,6 @@ Amplify.configure(awsconfig);
 Parece que a correção que usei para fazer o Storybook funcionar só funciona com yarn. Não sei se isso é verdade porque não testei com o npm.
 Você precisará da pasta .storybook em seu diretório, portanto, adicione-a à pasta src principal com os seguintes documentos:
 
-main.js
-
-```
-module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
-}
-```
-
-preview.js
-
-```
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
-```
-
 Para executar o storybook:
 
 1. Rode:
@@ -319,6 +276,12 @@ yarn storybook
 ```
 
 2. Vá até: http://localhost:6006/
+
+-   Para buildar o storybook:
+
+```
+yarn build-storybook
+```
 
 # (ES-ES) - Template Svelte con PWA
 
@@ -342,24 +305,32 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 !!! Advertencia !!!
 Si espera usar Amplify, debe mantener @rollup/plugin-common-js en la versión 16.0.0 en package.json, la versión 17.0.0 rompe todas las dependencias de amplify.
 
-1. Adicione .babelrc à sua pasta raiz
+1. Abrir una terminal
+2. Escribe:
 
 ```
-{
-  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
-}
+npx degit analubarreto/new-svelte-starter my-project
 ```
 
-2. Adicione .prettierrc à sua pasta raiz
+3. cd en la carpeta
+4. Instalar dependencias con:
 
 ```
-{
-  "singleQuote": true,
-  "trailingComma": "all",
-  "useTabs": true,
-  "tabWidth": 4,
-  "printWidth": 100
-}
+yarn
+```
+
+5. Ejecutar proyecto con:
+
+```
+yarn dev
+```
+
+6. Vá a http://localhost:5000/
+
+-   Construir proyeto con:
+
+```
+yarn build
 ```
 
 ### Empeze
@@ -445,29 +416,6 @@ Amplify.configure(awsconfig);
 Parece que la solución que usé para hacer que el Storybook funcione solo funciona con hilo. No sé si eso es cierto ya que no lo probé con npm.
 Necesitará la carpeta .storybook en su directorio, así que agréguela a la carpeta principal src con los siguientes documentos:
 
-main.js
-
-```
-module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
-}
-```
-
-preview.js
-
-```
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
-```
-
 Para ejecutar Storybook:
 
 1. Ejecuta
@@ -477,3 +425,9 @@ yarn storybook
 ```
 
 2. Va a: http://localhost:6006/
+
+-   Construir storybook con:
+
+```
+yarn build-storybook
+```
