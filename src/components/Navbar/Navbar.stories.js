@@ -7,11 +7,11 @@ export default {
   component: Navbar,
   argTypes: {
     links: {
-      name: links,
+      name: 'links',
       type: { name: 'array', required: true },
       description: 'navbar links',
       control: { type: null }
-    }
+    },
   }
 }
 
@@ -35,7 +35,7 @@ const defaultValue = [
 const Template = ({ links, ...args }) => ({
   Component: Navbar,
   props: {
-    links: array('links', defaultValue, ':'),
+    links: array('links', defaultValue, '|'),
     ...args
   }
 });

@@ -43,7 +43,7 @@ const defaultValue = [
 const Template = ({ langs, localeChanged, ...args }) => ({
   Component: LocaleSwitcher,
   props: {
-    langs: array('langs', defaultValue, ':'),
+    langs: array('langs', defaultValue, '|'),
     ...args
   },
   on: {
