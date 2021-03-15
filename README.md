@@ -11,7 +11,6 @@ This is a Svelte starter template, it uses:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
--   [Storybook](https://storybook.js.org/)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 
@@ -108,27 +107,6 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 ```
 
-### Storybook
-
-Seems like the fix I used to make storybook work only works with yarn. I don't know if that's true as I didn't test it with npm.
-You'll need the .storybook folder in your directory, so add it to the main src folder with the following documents:
-
-To start storybook:
-
-1. Run
-
-```
-yarn storybook
-```
-
-2. Go to http://localhost:6006/
-
--   Build storybook with:
-
-```
-yarn build-storybook
-```
-
 ## Cypress
 
 All config is made for you in this template, if you need a good source to learn cypress click [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
@@ -152,7 +130,6 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
--   [Storybook](https://storybook.js.org/)
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 
@@ -272,27 +249,6 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 ```
 
-### Storybook
-
-Parece que a correção que usei para fazer o Storybook funcionar só funciona com yarn. Não sei se isso é verdade porque não testei com o npm.
-Você precisará da pasta .storybook em seu diretório, portanto, adicione-a à pasta src principal com os seguintes documentos:
-
-Para executar o storybook:
-
-1. Rode:
-
-```
-yarn storybook
-```
-
-2. Vá até: http://localhost:6006/
-
--   Para buildar o storybook:
-
-```
-yarn build-storybook
-```
-
 ## Cypress
 
 Toda a configuração está feita para você, mas se você precisar de um lugar para aprender a usar o Cypress clique [aqui](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
@@ -316,7 +272,6 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [Prettier](https://prettier.io/)
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
--   [Storybook](https://storybook.js.org/)
 
     ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 
@@ -429,27 +384,6 @@ import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 
 Amplify.configure(awsconfig);
-```
-
-### Storybook
-
-Parece que la solución que usé para hacer que el Storybook funcione solo funciona con hilo. No sé si eso es cierto ya que no lo probé con npm.
-Necesitará la carpeta .storybook en su directorio, así que agréguela a la carpeta principal src con los siguientes documentos:
-
-Para ejecutar Storybook:
-
-1. Ejecuta
-
-```
-yarn storybook
-```
-
-2. Va a: http://localhost:6006/
-
--   Construir storybook con:
-
-```
-yarn build-storybook
 ```
 
 ## Cypress
