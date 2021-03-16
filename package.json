@@ -2,9 +2,11 @@
 	"name": "svelte-app",
 	"version": "1.0.0",
 	"scripts": {
-		"build": "rollup -c",
+		"build": "NODE_ENV=production rollup -c",
 		"dev": "rollup -c -w",
 		"start": "sirv public --single",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "NODE_ENV=production build-storybook",
 		"cypress": "./node_modules/.bin/cypress open"
 	},
 	"devDependencies": {
@@ -13,8 +15,14 @@
 		"@rollup/plugin-commonjs": "^16.0.0",
 		"@rollup/plugin-json": "^4.1.0",
 		"@rollup/plugin-node-resolve": "^11.0.0",
+		"@storybook/addon-actions": "^6.1.21",
+		"@storybook/addon-essentials": "^6.1.21",
+		"@storybook/addon-knobs": "^6.1.21",
+		"@storybook/addon-links": "^6.1.21",
+		"@storybook/addon-storysource": "^6.1.21",
+		"@storybook/svelte": "^6.1.21",
 		"babel-loader": "^8.2.2",
-		"cypress": "^6.6.0",
+		"cypress": "^6.7.1",
 		"postcss": "^8.2.6",
 		"postcss-nesting": "^7.0.1",
 		"prettier": "^2.2.1",
@@ -24,19 +32,22 @@
 		"rollup-plugin-livereload": "^2.0.0",
 		"rollup-plugin-svelte": "^7.0.0",
 		"rollup-plugin-terser": "^7.0.0",
+		"storybook-mobile": "^0.1.30",
 		"svelte": "^3.35.0",
 		"svelte-loader": "^3.0.0",
 		"svelte-preprocess": "^4.6.9",
-		"tailwindcss": "^2.0.3"
+		"tailwindcss": "^2.0.3",
+		"svelte-routing": "^1.5.0"
 	},
 	"dependencies": {
 		"autoprefixer": "^10.0.1",
-		"aws-amplify": "^3.3.20",
 		"cssnano": "^4.1.10",
 		"postcss-import": "^14.0.0",
 		"sirv-cli": "^1.0.0",
 		"svelte-i18n": "^3.3.6",
-		"svelte-icons": "^2.1.0",
-		"svelte-routing": "^1.5.0"
+		"svelte-icons": "^2.1.0"
+	},
+	"resolutions": {
+		"postcss": "8.2.6"
 	}
 }
