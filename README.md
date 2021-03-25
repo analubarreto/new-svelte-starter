@@ -14,8 +14,8 @@ This is a Svelte starter template, it uses:
 -   [Storybook](https://storybook.js.org/)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
-Special thanks to: (Cristovão Trevisan)[https://github.com/cristovao-trevisan]
-For something using version refer to: (SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
+Special thanks to: [Cristovão Trevisan](https://github.com/cristovao-trevisan)
+For something using version refer to: [SvelteKit Tailwind Starter](https://github.com/analubarreto/sveltekit-tailwind-starter)
 
 ## Get started
 
