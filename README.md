@@ -15,7 +15,8 @@ This is a Svelte starter template, it uses:
 -   [Axios](https://github.com/axios/axios)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
-Special thanks to: (Cristovão Trevisan)[https://github.com/cristovao-trevisan]
+Special thanks to: [Cristovão Trevisan](https://github.com/cristovao-trevisan)
+For something using version refer to: [SvelteKit Tailwind Starter](https://github.com/analubarreto/sveltekit-tailwind-starter)
 
 ## Get started
 
@@ -158,6 +159,7 @@ Esse é um template para início de projeto com Svelte, ele usa:
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 Agradeciomento especial para: (Gustavo Trevisan)[https://github.com/cristovao-trevisan]
+Para algo usando SvelteKit vá para: (SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
 
 ## Inicie
 
@@ -326,6 +328,7 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 
 ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 Un agradecimiento especial a: (Gustavo Trevisan)[https://github.com/cristovao-trevisan]
+Para utilizar SvelteKit vá a: (SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
 
 ## Plantilla de inicio
 
