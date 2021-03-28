@@ -12,6 +12,7 @@ This is a Svelte starter template, it uses:
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 -   [Storybook](https://storybook.js.org/)
+-   [Axios](https://github.com/axios/axios)
 
 Like my work? Will you buy me a coffee? https://www.buymeacoffee.com/analu
 Special thanks to: (Cristovão Trevisan)[https://github.com/cristovao-trevisan]
@@ -153,6 +154,7 @@ Esse é um template para início de projeto com Svelte, ele usa:
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 -   [Storybook](https://storybook.js.org/)
+-   [Axios](https://github.com/axios/axios)
 
 Gosta do meu trabalho? Compra um café para mim? https://www.buymeacoffee.com/analu
 Agradeciomento especial para: (Gustavo Trevisan)[https://github.com/cristovao-trevisan]
@@ -320,6 +322,7 @@ Esta es una plantilla de inicio de Svelte, utiliza:
 -   [Svelte Icons](https://svelte-icons.vercel.app/)
 -   [i18n](https://github.com/kaisermann/svelte-i18n/tree/main/docs)
 -   [Storybook](https://storybook.js.org/)
+-   [Axios](https://github.com/axios/axios)
 
 ¿Te gusta mi trabajo? ¿Me invitas a un café? https://www.buymeacoffee.com/analu
 Un agradecimiento especial a: (Gustavo Trevisan)[https://github.com/cristovao-trevisan]
